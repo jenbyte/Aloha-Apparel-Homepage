@@ -192,40 +192,45 @@ html {
 }
 .site-header {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
-.logos-display {
-  padding: 8px;
-}
 .aloha-logo {
   width: auto;
-  height: 58.5px;
-  order: -1;
+  height: 50px;
+  order: 1;
+  margin: 1rem;
 }
 .cart-logo {
-  width: 55px;
-  height: 55px;
-  min-width: 40px;
-  height: auto;
+  width: 50px;
+  height: 50px;
   order: 2;
+  margin: 1rem;
 }
 .main-navigation {
+  text-align: center;
+  order: 3;
+  border-top: 1px solid #d7d7d7;
+  width: 100%;
+}
+.main-navigation ul {
+  display: flex;
+  flex-flow: row wrap;
   font-family: "Raleway-Med", sans-serif;
   list-style: none;
-  order: 1;
 }
 .main-navigation a {
   color: #e2574c;
   text-decoration: none;
   font-size: 1rem;
-  padding: 16px;
-  order: 1;
+  padding: 1rem;
 }
 .links-spacing {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
+  padding: 1rem;
 }
 li a:hover {
   color: #b64036;
@@ -269,13 +274,16 @@ h4 {
   font-weight: 400;
 }
 
-/*  */
+/* - mobile */
 .title {
   font-family: "PlayfairDisplay-Bold";
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
   margin-top: 0;
+}
+.wave {
+  text-shadow: 3px 2px 2px gray;
 }
 span {
   font-family: "PlayfairDisplay-Italic";
@@ -300,25 +308,76 @@ article p {
 /*    PRODUCTS - MOBILE    */
 .products {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: center;
+}
+.category {
+  display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 .products a {
-  font-family: raleway-medium;
+  font-family: "Raleway-Med";
   color: white;
   text-shadow: 2px 2px 2px gray;
-  font-size: 2em;
+  font-size: 1.8rem;
   text-decoration: none;
   text-align: center;
-  /* padding-top: 50%;
-  padding-left: 50%;
-  height: auto; */
 }
 .products a:hover {
   color: bisque;
+}
+.wide {
+  text-align: center;
+  min-width: 400px;
+  min-height: 200px;
+  max-width: 600px;
+  max-height: 310px;
+  margin-bottom: 0.5rem;
+  flex: auto;
+}
+.square {
+  text-align: center;
+  min-height: 196px;
+  min-width: 196px;
+  max-height: 300px;
+  max-width: 300px;
+  margin-bottom: 0.5rem;
+  flex: auto;
+}
+.category:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
+    url("./images/mens-category.jpg") no-repeat center;
+  background-size: cover;
+}
+.category:nth-child(2n) {
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
+    url("./images/trends-category.jpg") no-repeat 50%;
+  background-size: cover;
+  margin-right: 0.5rem;
+}
+.category:nth-child(3n) {
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
+    url("./images/glasses-category.jpg") no-repeat 50%;
+  background-size: cover;
+}
+.category:nth-child(4n) {
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
+    url("./images/sale-category.jpg") no-repeat 50%;
+  background-size: cover;
+}
+.category:nth-child(5n) {
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
+    url("./images/bags-category.jpg") no-repeat center;
+  background-size: cover;
+}
+.category:last-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
+    url("./images/womens-category.jpg") no-repeat center;
+  background-size: cover;
+  margin-right: 0;
 }
 
 /*     SUBSCRIBE - mobile    */
@@ -388,7 +447,6 @@ footer .container {
 .contact {
   margin-bottom: 1rem;
 }
-
 .copyright {
   margin-bottom: 1rem;
 }
@@ -417,35 +475,36 @@ footer .container {
   html {
     font-size: 16px;
   }
-  .logos-display {
+  .site-header {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
   }
   .aloha-logo {
     width: auto;
     height: 50px;
+    margin: 1rem;
+    margin-right: 0;
+    order: 1;
   }
   .cart-logo {
     width: 50px;
     height: 50px;
-    min-width: 40px;
-    height: auto;
+    margin: 1rem;
+    margin-left: 0;
+    order: 3;
   }
   .main-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-family: "Raleway-Med", sans-serif;
     list-style: none;
+    border-top: 0em;
+    order: 2;
   }
   .main-navigation a {
     color: #e2574c;
     text-decoration: none;
     font-size: 0.9rem;
-    padding: 20px;
   }
   .links-spacing {
     display: flex;
@@ -499,18 +558,60 @@ footer .container {
     padding: 4rem 2rem;
     max-width: 1240px;
   }
+  /*  PRODUCTS - tablet   */
+  .products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .products a {
+    font-family: raleway-medium;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    height: auto;
+    text-shadow: 2px 2px 2px gray;
+  }
+  .products a:hover {
+    color: bisque;
+  }
+
+  .wide {
+    text-align: center;
+    min-width: 400px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 310px;
+    margin-bottom: 0.5rem;
+    flex: auto;
+  }
+  .square {
+    text-align: center;
+    min-height: 196px;
+    min-width: 196px;
+    max-height: 300px;
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+    flex: auto;
+  }
 
   /*     FOOTER - tablet   */
   .footer {
     background-color: #242424;
     color: white;
     font-family: "PlayfairDisplay", sans-serif;
-    padding-top: 3.5rem;
+    padding: 2rem 0;
     margin: auto;
   }
   footer .container {
-    padding: 0 1rem;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -520,8 +621,7 @@ footer .container {
   .footer p {
     text-align: left;
     line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
   }
   .contact a:link {
     color: white;
@@ -530,6 +630,7 @@ footer .container {
     color: #b64036;
   }
   .copyright {
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .contact {
@@ -541,7 +642,8 @@ footer .container {
   }
 
   .social {
-    padding-right: 2rem;
+    padding-right: 1rem;
+    align-self: center;
   }
   .social ul li {
     list-style: none;
@@ -574,31 +676,26 @@ footer .container {
   }
   .site-header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .aloha-logo {
     width: auto;
     height: 60px;
-    order: -2;
   }
   .cart-logo {
     width: 60px;
     height: 60px;
-    min-width: 40px;
-    height: auto;
   }
   .main-navigation {
     font-family: "Raleway-Med", sans-serif;
     list-style: none;
-    order: -1;
   }
   .main-navigation a {
     color: #e2574c;
     text-decoration: none;
     font-size: 1rem;
-    padding: 20px;
+    padding: 1rem;
   }
   li a:hover {
     color: #b64036;
@@ -609,16 +706,10 @@ footer .container {
 
   /*     BANNER - desktop    */
   .banner-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/banner-girl.png") no-repeat center top,
-      url("./images/flower-bkgd.jpg") repeat center;
     background-size: contain, 17%;
     height: 34.38rem;
     background-position: center, center 70px;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .banner-text {
     display: flex;
@@ -671,68 +762,43 @@ footer .container {
   /*  PRODUCTS - desktop   */
   .products {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    align-content: center;
+  }
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .products a {
     font-family: raleway-medium;
     color: white;
     font-size: 2em;
     text-decoration: none;
-    text-align: center;
-    padding-top: 50%;
-    padding-left: 50%;
-    height: auto;
     text-shadow: 2px 2px 2px gray;
   }
   .products a:hover {
     color: bisque;
   }
-  .category-wide {
+  .wide {
     text-align: center;
     display: flex;
-    flex-basis: 50%;
-    height: auto;
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    max-height: 360px;
+    flex: auto;
   }
-  .category-square {
+  .square {
     text-align: center;
     display: flex;
-    flex-basis: 25%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .category:first-child {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/mens-category.jpg") no-repeat center;
-    background-size: cover;
-  }
-  .category:nth-child(2n) {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/trends-category.jpg") no-repeat 50%;
-    background-size: cover;
-  }
-  .category:nth-child(3n) {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/glasses-category.jpg") no-repeat 50%;
-    background-size: cover;
-  }
-  .category:nth-child(4n) {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/sale-category.jpg") no-repeat 50%;
-    background-size: cover;
-  }
-  .category:nth-child(5n) {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/bags-category.jpg") no-repeat center;
-    background-size: cover;
-  }
-  .category:last-child {
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)),
-      url("./images/womens-category.jpg") no-repeat center;
-    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    max-height: 360px;
+    max-width: 360px;
+    flex: auto;
   }
 
   /*       CAROUSEL PRODUCTS - desktop          */
@@ -814,9 +880,7 @@ footer .container {
   }
   footer .container {
     padding: 0 2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    margin-bottom: 0;
+    margin: 0 4rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -840,7 +904,7 @@ footer .container {
   }
 
   .copyright {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
   .address {
     padding: 0;
@@ -848,7 +912,7 @@ footer .container {
   }
 
   .social {
-    padding-right: 4rem;
+    padding-right: 2rem;
   }
   .social ul li {
     list-style: none;
