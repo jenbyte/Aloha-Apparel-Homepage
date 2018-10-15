@@ -198,27 +198,26 @@ article p {
 /*    CAROUSEL - mobile  */
 .carousel {
   text-align: center;
-  font-family: "Raleway", sans-serif;
-  color: #969696;
 }
 .carousel-container {
-  margin: 1rem 0;
-  padding: 3rem 0;
+  margin: 2rem 1rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
-.caro-flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.main-carousel .carousel-cell {
+  width: 100%;
+  padding: 3rem 2rem;
 }
-.carousel figure {
-  max-width: 25%;
+img {
+  max-width: 100%;
+  height: auto;
 }
 h2 {
   font-family: "PlayfairDisplay";
   color: #e2574c;
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .product-type,
 .price {
@@ -229,7 +228,7 @@ h2 {
   font-family: "Raleway-med", sans-serif;
   font-size: 0.75rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .price {
   text-align: center;
@@ -241,7 +240,7 @@ h2 {
 .wave-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1)),
     url("./images/wave-bkgd.jpg") no-repeat center bottom;
-  height: 325px;
+  height: 330px;
   background-position: center, center 98%;
   margin-bottom: 0.6rem;
 }
@@ -255,7 +254,7 @@ h2 {
   position: relative;
 }
 .subscribe {
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   border-radius: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -267,8 +266,9 @@ h2 {
   color: white;
   background-color: #e2574c;
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 9px 20px;
   font-size: 1em;
+  font-family: "Raleway-med", sans-serif;
   border: 0;
   position: absolute;
   right: 4px;
@@ -281,7 +281,7 @@ h2 {
 .footer {
   background-color: #242424;
   color: white;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: "PlayfairDisplay";
   padding: 3rem 0;
   margin: auto;
   text-align: center;
@@ -348,34 +348,24 @@ footer .container {
   .aloha-logo {
     width: auto;
     height: 50px;
-    margin: 1rem;
     margin-right: 0;
     order: 1;
   }
   .cart-logo {
     width: 50px;
     height: 50px;
-    margin: 1rem;
     margin-left: 0;
     order: 3;
   }
   .main-navigation {
     font-family: "Raleway-Med", sans-serif;
-    list-style: none;
-    border-top: 0em;
+    border-top: 0;
     order: 2;
   }
   .main-navigation a {
     color: #e2574c;
     text-decoration: none;
     font-size: 0.9rem;
-  }
-  .links-spacing {
-    display: flex;
-    justify-content: space-around;
-  }
-  li a:hover {
-    color: #b64036;
   }
   .banner-text {
     display: flex;
@@ -386,38 +376,16 @@ footer .container {
     text-shadow: 2px 2px 3px gray;
   }
   h4 {
-    font-family: "Raleway-Med", sans-serif;
     font-size: 1.25rem;
-    color: white;
-    font-weight: 400;
   }
   .season {
-    font-family: "PlayfairDisplay";
     font-size: 3rem;
-    color: white;
-    font-weight: 400;
   }
   /*    - tablet  */
-  .title {
-    font-family: "PlayfairDisplay-Bold";
-    text-align: center;
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-  }
-  span {
-    font-family: "PlayfairDisplay-Italic";
-    font-style: italic;
-    font-weight: 100;
-  }
   article p {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    font-size: 1.15em;
-    line-height: 2;
-    margin-bottom: 1.5rem;
-    max-width: 720px;
+    max-width: 675px;
     margin: auto;
+    margin-bottom: 2rem;
   }
   .container {
     padding: 4rem 1rem;
@@ -446,14 +414,32 @@ footer .container {
     border-right: 0;
   }
 
-  /*     FOOTER - tablet   */
-  .footer {
-    background-color: #242424;
-    color: white;
-    font-family: "PlayfairDisplay", sans-serif;
-    padding: 2rem 0;
-    margin: auto;
+  .main-carousel .carousel-cell {
+    width: 50%;
   }
+  .carousel {
+    text-align: center;
+  }
+
+  /*     SUBSCRIBE - tablet      */
+  .wave-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)),
+      url("./images/wave-bkgd.jpg") no-repeat center bottom;
+    height: 350px;
+  }
+  .subscribe-form {
+    max-width: 450px;
+  }
+  .subscribe {
+    padding: 0.9rem 1.75rem;
+  }
+  .button {
+    padding: 0.65rem 1.5rem;
+    position: absolute;
+    right: 3.5px;
+  }
+
+  /*     FOOTER - tablet   */
   footer .container {
     margin: auto;
     display: flex;
@@ -468,26 +454,9 @@ footer .container {
     line-height: 1.5;
     margin: 0;
   }
-  .contact a:link {
-    color: white;
-  }
-  .contact a:hover {
-    color: #b64036;
-  }
   .copyright {
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-  .contact {
-    margin-bottom: 1rem;
-  }
-  .address {
-    padding: 0;
-    color: #969696;
-  }
-
-  .social {
-    align-self: center;
   }
   .social ul li {
     list-style: none;
@@ -495,15 +464,13 @@ footer .container {
     justify-content: flex-start;
     align-items: center;
   }
-  .social a,
-  .social-name {
+  .social a {
     text-decoration: none;
     color: white;
     font-family: "Raleway", sans-serif;
     display: flex;
     font-size: 1rem;
   }
-
   .social i {
     width: 40px;
     height: 30px;
@@ -514,7 +481,6 @@ footer .container {
     text-decoration: none;
     color: white;
     font-family: "Raleway", sans-serif;
-    display: flex;
     font-size: 1rem;
     font-style: normal;
   }
@@ -529,28 +495,19 @@ footer .container {
     max-width: 1240px;
   }
   .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 1240px;
     margin: auto;
     padding: 0 1rem;
   }
   .aloha-logo {
     width: auto;
-    height: 60px;
+    height: 62px;
   }
   .cart-logo {
-    width: 60px;
-    height: 60px;
-  }
-  .main-navigation {
-    font-family: "Raleway-Med", sans-serif;
-    list-style: none;
+    width: 62px;
+    height: 62px;
   }
   .main-navigation a {
-    color: #e2574c;
-    text-decoration: none;
     font-size: 1rem;
     padding: 1rem;
   }
@@ -567,14 +524,6 @@ footer .container {
   }
 
   /*  - desktop  */
-  article p {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    font-size: 1.15em;
-    line-height: 2;
-    margin: 0 15rem;
-    margin-bottom: 1.5rem;
-  }
   .container {
     padding: 2.5rem 2rem;
     padding-top: 4rem;
@@ -583,39 +532,15 @@ footer .container {
     margin: auto;
   }
 
-  /*     SUBSCRIBE - desktop      */
-  .wave-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)),
-      url("./images/wave-bkgd.jpg") no-repeat center bottom;
-    height: 350px;
+  .main-carousel .carousel-cell {
+    width: 25%;
   }
-  .subscribe-form {
-    max-width: 450px;
-  }
-  .subscribe {
-    padding: 0.8rem 1.75rem;
-    border-radius: 25px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    border: 0;
-    width: 100%;
-  }
-  .button {
-    color: white;
-    background-color: #e2574c;
-    border-radius: 25px;
-    padding: 10px 25px;
-    font-size: 1em;
-    border: 0;
-    position: absolute;
-    right: 3px;
+  .carousel-container {
+    max-width: 1240px;
+    margin: auto;
   }
 
   /*     FOOTER - desktop   */
-  .footer {
-    padding: 3rem 0;
-  }
   footer .container {
     padding: 0 2rem;
     max-width: 1240px;
@@ -626,23 +551,17 @@ footer .container {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .social {
-    padding-right: 2rem;
+    padding-right: 2.5rem;
   }
   .social ul li {
-    list-style: none;
-    line-height: 1.25;
+    line-height: 1.2;
   }
   .social i {
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: flex-start;
-  }
-  .social-name {
-    display: inline;
-    color: white;
-    font-family: "Raleway", sans-serif;
+    padding-right: 1rem;
   }
 }
