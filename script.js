@@ -56,3 +56,8 @@ $(document).ready(function() {
     autoPlay: true
   }); //end of flickity carousel
 }); //end of doc ready
+
+//subscribe form
+$(".subscribe-form").submit(function() {
+  alert("Thanks for subscribing!");
+});

@@ -68,11 +68,12 @@ li a:hover {
 }
 .banner-text {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   color: white;
   text-shadow: 2px 2px 3px rgb(99, 99, 99, 0.8);
+  max-width: 80%;
 }
 h4 {
   font-family: "Raleway-Med", sans-serif;
@@ -367,6 +368,14 @@ footer .container {
     text-decoration: none;
     font-size: 0.9rem;
   }
+
+  /*     BANNER - tablet    */
+  .banner-bg {
+    background-size: contain, 17%;
+    /* height: 34.38rem; */
+    background-position: center, center 60px;
+    width: 100vw;
+  }
   .banner-text {
     display: flex;
     flex-direction: column;
@@ -385,7 +394,6 @@ footer .container {
   article p {
     max-width: 675px;
     margin: auto;
-    margin-bottom: 2rem;
   }
   .container {
     padding: 4rem 1rem;
@@ -514,9 +522,9 @@ footer .container {
 
   /*     BANNER - desktop    */
   .banner-bg {
-    background-size: contain, 17%;
+    background-size: contain, 20%;
     height: 34.38rem;
-    background-position: center, center 70px;
+    background-position: center, center 60px;
     width: 100vw;
   }
   .season {
@@ -525,8 +533,7 @@ footer .container {
 
   /*  - desktop  */
   .container {
-    padding: 2.5rem 2rem;
-    padding-top: 4rem;
+    padding: 4rem 2rem;
     align-items: center;
     max-width: 1240px;
     margin: auto;
