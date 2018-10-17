@@ -79,4 +79,14 @@ $(document).ready(function() {
       header.classList.remove("sticky");
     }
   } // end of sticky-nav bar
+
+  // Cart button counter
+  let count = 0;
+  $(".shop").on("click", function(event) {
+    event.preventDefault();
+
+    count++;
+    $("#counter").html(count);
+    console.log(count);
+  }); // end of cart button counter
 }); //end of doc ready

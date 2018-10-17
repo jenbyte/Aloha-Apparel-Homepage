@@ -8,12 +8,30 @@ html {
   font-size: 14px;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-
+#counter {
+  display: block;
+  position: absolute;
+  background: #e2574c;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Raleway-Med", sans-serif;
+  padding: 0.45rem 0.5rem;
+  border-radius: 50%;
+  z-index: 1;
+  text-align: center;
+  right: 0.5rem;
+  top: 0.8rem;
+  font-style: none;
+}
+#counter:hover {
+  background: #b64036;
+}
 .site-header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .aloha-logo {
   width: auto;
@@ -209,7 +227,7 @@ article p {
 }
 .main-carousel .carousel-cell {
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
 }
 img {
   max-width: 100%;
@@ -237,6 +255,19 @@ h2 {
   text-align: center;
   font-family: "Raleway-med", sans-serif;
   font-size: 1rem;
+}
+.shop {
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #000000;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8em;
+  font-family: "Raleway-med", sans-serif;
+  border: 0;
+}
+.shop:hover {
+  background-color: #b64036;
 }
 
 /*     SUBSCRIBE - mobile    */
@@ -348,9 +379,7 @@ footer .container {
   border-bottom: 1px solid #d7d7d7;
 }
 .header {
-  /* padding: 0rem 1rem; */
   background: #fff;
-  /* color: #f1f1f1; */
 }
 *:focus {
   outline: none;
@@ -392,7 +421,6 @@ footer .container {
 
   /*     BANNER - tablet    */
   .banner-bg {
-    /* background-size: cover, contain; */
     background-position: top, center 50px;
     width: 100vw;
   }
@@ -537,7 +565,8 @@ footer .container {
   }
   .main-navigation a {
     font-size: 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    width: 100%;
   }
 
   /*     BANNER - desktop    */
@@ -594,7 +623,9 @@ footer .container {
   /* stick-nav */
   .header {
     margin: 0rem 5rem;
-    /* background: #fff; */
+    background: #fff;
+    width: 100%;
+    margin: auto;
     /* color: #f1f1f1; */
   }
   .sticky {
@@ -605,5 +636,19 @@ footer .container {
     background: #fff;
     z-index: 10000;
     height: auto;
+  }
+  #counter {
+    display: block;
+    position: absolute;
+    background: #e2574c;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Raleway-Med", sans-serif;
+    padding: 0.4rem 0.5rem;
+    border-radius: 25px;
+    z-index: 1;
+    text-align: center;
+    right: 1.5rem;
+    top: 1rem;
   }
 }
