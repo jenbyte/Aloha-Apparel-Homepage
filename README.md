@@ -9,7 +9,8 @@ This project focuses on learning HTML, CSS, JavaScript and jQuery by recreating 
 
 ## **Technologies**
 * **Styling:** flickity, fontawesome, transfonter
-* **Responsive Design:** Mobile first. Breakpoints at 1240px for desktop, and 600px for tablets.
+* **Responsive Design:** Mobile-first. Breakpoints at `1240px` for desktop, and `600px` for tablets.
+* **Built With:** Visual Studio Code 
 
 ## **Personal Learnings**
 * Using HTML to create a backbone of a website
