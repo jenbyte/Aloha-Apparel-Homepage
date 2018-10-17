@@ -11,5 +11,11 @@ This project focuses on learning HTML, CSS, JavaScript and jQuery by recreating 
 * **Styling:** flickity, fontawesome, transfonter
 * **Responsive Design:** Mobile first. Breakpoints at 1240px for desktop, and 600px for tablets.
 
+## **Personal Learnings**
+* Using HTML to create a backbone of a website
+* Using CSS to style the website, such as fonts, colors, sizing, flexbox, text-decoration
+* Using JavaScript to add behaviour to the website
+* Organizing code so it's easy to read
+
 ## **License**
 Learning materials content is copyright (c) 2019 RED Academy. 
