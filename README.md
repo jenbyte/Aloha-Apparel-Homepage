@@ -1,6 +1,6 @@
 # Project 1: Aloha Apparel Co.
 
-This project focuses on learning HTML, CSS, JavaScript and jQuery by recreating the "Aloha Apparel Co." website, originally created by RED Academy.
+This project focuses on learning HTML, CSS, JavaScript and jQuery by remaking the "Aloha Apparel Co." website, originally created by RED Academy.
 
 ## **Instructions**
 1. Click on the "Clone or download" button, then "Download ZIP." 
