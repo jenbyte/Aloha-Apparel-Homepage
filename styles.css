@@ -7,6 +7,8 @@
 html {
   font-size: 14px;
 }
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
 .site-header {
   display: flex;
   flex-flow: row wrap;
@@ -335,6 +337,25 @@ footer .container {
   display: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  z-index: 10000;
+  height: auto;
+  border-bottom: 1px solid #d7d7d7;
+}
+.header {
+  /* padding: 0rem 1rem; */
+  background: #fff;
+  /* color: #f1f1f1; */
+}
+*:focus {
+  outline: none;
+}
+
 /*   TABLET   TABLET    TABLET   */
 @media only screen and (min-width: 600px) {
   html {
@@ -371,9 +392,8 @@ footer .container {
 
   /*     BANNER - tablet    */
   .banner-bg {
-    background-size: contain, 17%;
-    /* height: 34.38rem; */
-    background-position: center, center 60px;
+    /* background-size: cover, contain; */
+    background-position: top, center 50px;
     width: 100vw;
   }
   .banner-text {
@@ -570,5 +590,20 @@ footer .container {
     display: flex;
     justify-content: flex-start;
     padding-right: 1rem;
+  }
+  /* stick-nav */
+  .header {
+    margin: 0rem 5rem;
+    /* background: #fff; */
+    /* color: #f1f1f1; */
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    z-index: 10000;
+    height: auto;
   }
 }

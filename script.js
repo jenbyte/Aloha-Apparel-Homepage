@@ -14,7 +14,7 @@ $(document).ready(function() {
         location.hostname == this.hostname
       ) {
         // Figure out element to scroll to
-        var target = $(this.hash);
+        let target = $(this.hash);
         target = target.length
           ? target
           : $("[name=" + this.hash.slice(1) + "]");
@@ -30,7 +30,7 @@ $(document).ready(function() {
             function() {
               // Callback after animation
               // Must change focus!
-              var $target = $(target);
+              let $target = $(target);
               $target.focus();
               if ($target.is(":focus")) {
                 // Checking if the target was focused
@@ -55,9 +55,28 @@ $(document).ready(function() {
     prevNextButtons: false,
     autoPlay: true
   }); //end of flickity carousel
-}); //end of doc ready
 
-//subscribe form
-$(".subscribe-form").submit(function() {
-  alert("Thanks for subscribing!");
-});
+  //subscribe form
+  $(".subscribe-form").submit(function() {
+    event.preventDefault();
+    if ($(".subscribe").val() == "") {
+      alert("Please submit a valid email address.");
+    } else {
+      alert("Thanks for subscribing!");
+    }
+  });
+
+  //sticky-nav bar
+  window.onscroll = function() {
+    myFunction();
+  };
+  let header = document.getElementById("myHeader");
+  let sticky = header.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  } // end of sticky-nav bar
+}); //end of doc ready
