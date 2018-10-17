@@ -13,10 +13,10 @@ This project focuses on learning HTML, CSS, JavaScript and jQuery by recreating 
 * **Built With:** Visual Studio Code 
 
 ## **Personal Learnings**
-* Using HTML to create a backbone of a website
+* Using HTML to create the backbone of a website
 * Using CSS to style the website, such as fonts, colors, sizing, flexbox, text-decoration
-* Using JavaScript to add behaviour to the website
-* Organizing code so it's easy to read
+* Using JavaScript/jQuery to add behaviour to the website
+* Organizing code in a clean and orderly manner
 
 ## **License**
 Learning materials content is copyright (c) 2019 RED Academy. 
