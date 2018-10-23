@@ -261,8 +261,8 @@ h2 {
   color: white;
   background-color: #000000;
   border-radius: 25px;
-  padding: 0.5rem 1rem;
-  font-size: 0.8em;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.75rem;
   font-family: "Raleway-med", sans-serif;
   border: 0;
 }
