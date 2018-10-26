@@ -15,7 +15,7 @@ html {
 a:hover,
 a:focus {
   background: black;
-  color: #e2574c;
+  color: #db3a26;
   padding: 10px 12px;
 }
 .screen-reader-text {
@@ -37,7 +37,7 @@ a:focus {
 .counter {
   display: block;
   position: absolute;
-  background: #e2574c;
+  background: #db3a26;
   color: #fff;
   font-size: 0.8rem;
   font-family: "Raleway-Med", sans-serif;
@@ -49,7 +49,8 @@ a:focus {
   top: 0.8rem;
   font-style: none;
 }
-.counter:hover {
+.counter:hover,
+.counter:focus {
   background: #b64036;
 }
 .site-header {
@@ -84,7 +85,7 @@ a:focus {
   list-style: none;
 }
 .main-navigation a {
-  color: #e2574c;
+  color: #db3a26;
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
@@ -95,7 +96,8 @@ a:focus {
   justify-content: space-around;
   padding: 1rem;
 }
-li a:hover {
+li a:hover,
+li a:focus {
   color: #b64036;
 }
 
@@ -208,7 +210,8 @@ article p {
   text-decoration: none;
   text-align: center;
 }
-.products a:hover {
+.products a:hover,
+.products a:focus {
   color: bisque;
 }
 .cmens {
@@ -292,7 +295,8 @@ h2 {
   font-family: "Raleway-med", sans-serif;
   border: 0;
 }
-.shop:hover {
+.shop:hover,
+.shop:focus {
   background-color: #b64036;
 }
 
@@ -324,7 +328,7 @@ h2 {
 }
 .button {
   color: white;
-  background-color: #e2574c;
+  background-color: #db3a26;
   border-radius: 25px;
   padding: 9px 20px;
   font-size: 1em;
@@ -333,7 +337,8 @@ h2 {
   position: absolute;
   right: 4px;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #b64036;
 }
 
@@ -362,7 +367,8 @@ footer .container {
 .contact a:link {
   color: white;
 }
-.contact a:hover {
+.contact a:hover,
+.contact a:focus {
   color: #b64036;
 }
 .contact {
@@ -383,7 +389,8 @@ footer .container {
 .social a {
   color: white;
 }
-.social ul li:hover {
+.social ul li:hover,
+.social ul li:focus {
   color: #b64036;
 }
 .social i {
@@ -440,7 +447,7 @@ footer .container {
     order: 2;
   }
   .main-navigation a {
-    color: #e2574c;
+    color: #db3a26;
     text-decoration: none;
     font-size: 0.9rem;
   }
@@ -566,7 +573,8 @@ footer .container {
     font-size: 1rem;
     font-style: normal;
   }
-  li:hover .social-text {
+  li:hover .social-text,
+  li:focus .social-text {
     color: #b64036;
   }
 }
@@ -666,7 +674,7 @@ footer .container {
   #counter {
     display: block;
     position: absolute;
-    background: #e2574c;
+    background: #db3a26;
     color: #fff;
     font-size: 0.8rem;
     font-family: "Raleway-Med", sans-serif;
