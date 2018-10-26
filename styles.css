@@ -9,6 +9,15 @@
 html {
   font-size: 14px;
 }
+#about[tabindex="-1"]:focus {
+  outline: 0;
+}
+a:hover,
+a:focus {
+  background: black;
+  color: #e2574c;
+  padding: 10px 12px;
+}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;

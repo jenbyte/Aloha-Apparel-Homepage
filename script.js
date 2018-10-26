@@ -89,4 +89,18 @@ $(document).ready(function() {
     $("#counter").html(count);
     console.log(count);
   }); // end of cart button counter
+
+  $(function() {
+    $("a[href^='#']")
+      .not("a[href='#']")
+      .click(function() {
+        $(
+          "#" +
+            $(this)
+              .attr("href")
+              .slice(1) +
+            ""
+        ).focus();
+      });
+  }); // skip link bug fix
 }); //end of doc ready

@@ -17,6 +17,7 @@
 
 <body>
     <header class="sticky header" id="myHeader">
+        <a class="screen-reader-text" href="#about">Skip to content</a>
         <section class="site-header">
             <img src="./images/aloha-logo.svg" alt="aloha apparel co. logo" class="aloha-logo">
             <nav class="main-navigation">
@@ -30,13 +31,13 @@
                 </div>
             </nav>
             <img src="./images/cart-icon.svg" alt="shopping cart" class="cart-logo">
-            <span id="counter">0</span>
+            <span class="counter">0</span>
         </section>
     </header>
     <section class="banner-bg">
         <div class="banner-text">
-            <h4>NEW COLLECTION</h4>
-            <p class="season">Spring/Summer 2019</p>
+            <h4 tabindex="-1">NEW COLLECTION</h4>
+            <p class="season" tabindex="-1">Spring/Summer 2019</p>
         </div>
     </section>
 
@@ -62,7 +63,7 @@
     <section class="carousel-container" id="featured">
         <h1 class="title"><span>Most-Loved </span><b>Products</b></h1>
 
-        <div class="carousel main-carousel">
+        <div class="carousel main-carousel" tabindex="-1">
             <div class="carousel-cell">
                 <img src="./images/stretch-knit-dress.jpg" alt="white polka-dot black dress">
                 <p class="product-type">DRESSES</p>
