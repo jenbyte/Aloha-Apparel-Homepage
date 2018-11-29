@@ -4,17 +4,15 @@ This project focuses on learning HTML, CSS, JavaScript and jQuery by remaking th
 
 ## **Responsive Design**
 
-Mobile-first, responsive design.
+Mobile-first, responsive design. Breakpoints at `600px` for tablet and `1240px` for desktop.
 
-##### **Mobile**:
+**Mobile**: <img src="images/ScreenShot-aloha-mobile.png" width="auto" height="500">
 
-<img src="images/ScreenShot-aloha-mobile.png" width="auto" height="500">
-
-##### **Tablet**: breakpoint at `600px`
+**Tablet**: breakpoint at `600px`:
 
 <img src="images/ScreenShot-aloha-tablet.png" width="500" height="auto">
 
-##### **Desktop**: breakpoint at `1240px`
+**Desktop**: breakpoint at `1240px`:
 
 <img src="images/ScreenShot-aloha-desktop.png" width="800" height="auto">
 
