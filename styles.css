@@ -109,8 +109,8 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 121px;
   height: 400px;
-  /* margin-top: 50px; */
   width: 100vw;
 }
 .banner-text {
@@ -396,7 +396,7 @@ footer .container {
 }
 
 .sticky {
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   position: fixed;
   top: 0;
   width: 100%;
@@ -406,11 +406,8 @@ footer .container {
   z-index: 10;
 }
 .header {
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
 }
-/* *:focus {
-  outline: none;
-} */
 
 /*   TABLET   TABLET    TABLET   */
 @media only screen and (min-width: 600px) {
@@ -449,6 +446,7 @@ footer .container {
   /*     BANNER - tablet    */
   .banner-bg {
     background-position: top, center 50px;
+    margin-top: 82px;
     width: 100vw;
   }
   .banner-text {
@@ -598,9 +596,10 @@ footer .container {
 
   /*     BANNER - desktop    */
   .banner-bg {
-    background-size: contain, 20%;
-    height: 34.38rem;
     background-position: center, center 60px;
+    background-size: contain, 20%;
+    margin-top: 95px;
+    height: 34.38rem;
     width: 100vw;
   }
   .season {
@@ -650,13 +649,12 @@ footer .container {
   /* stick-nav */
   .header {
     margin: 0rem 5rem;
-    background: #fff;
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
     margin: auto;
-    /* color: #f1f1f1; */
+    width: 100%;
   }
   .sticky {
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
     position: fixed;
     top: 0;
     margin: auto;

@@ -66,22 +66,6 @@ $(document).ready(function() {
     }
   });
 
-  //sticky-nav bar
-  window.onscroll = function() {
-    myFunction();
-  };
-
-  let header = document.getElementById('myHeader');
-  let sticky = header.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add('sticky');
-    } else {
-      header.classList.remove('sticky');
-    }
-  } // end of sticky-nav bar
-
   // Cart button counter
   let count = 0;
   $('.shop').on('click', function(event) {
