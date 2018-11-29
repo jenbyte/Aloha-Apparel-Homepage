@@ -11,15 +11,11 @@ Mobile-first, responsive design. Breakpoints at `600px` for tablet and `1240px` 
 --
 
 **Tablet**: breakpoint at `600px`:
-
-## <img src="images/ScreenShot-aloha-tablet.png" width="500" height="auto">
-
+<img src="images/ScreenShot-aloha-tablet.png" width="500" height="auto">
 --
 
 **Desktop**: breakpoint at `1240px`:
-
-## <img src="images/ScreenShot-aloha-desktop.png" width="800" height="auto">
-
+<img src="images/ScreenShot-aloha-desktop.png" width="800" height="auto">
 --
 
 ## **Technologies**
