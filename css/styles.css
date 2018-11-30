@@ -16,7 +16,7 @@ a:hover,
 a:focus {
   background: black;
   color: #e2574c;
-  padding: 10px 12px;
+  padding: 7px 10px;
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -47,7 +47,6 @@ a:focus {
   text-align: center;
   right: 0.5rem;
   top: 0.8rem;
-  font-style: none;
 }
 .counter:hover {
   background: #b64036;
@@ -119,7 +118,7 @@ li a:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  text-shadow: 2px 2px 3px rgb(99, 99, 99, 0.8);
+  text-shadow: 2px 2px 3px #636363;
   max-width: 80%;
 }
 h4 {
@@ -148,7 +147,7 @@ h4 {
   margin-top: 0;
 }
 .wave {
-  text-shadow: 2px 2px 2px rgb(99, 99, 99, 0.8);
+  text-shadow: 2px 2px 3px #636363;
 }
 span {
   font-family: 'PlayfairDisplay-Italic';
@@ -204,7 +203,7 @@ article p {
 .products a {
   font-family: 'Raleway-Med';
   color: white;
-  text-shadow: 2px 2px 2px rgb(99, 99, 99, 0.8);
+  text-shadow: 2px 2px 3px #636363;
   font-size: 1.8rem;
   text-decoration: none;
   text-align: center;
@@ -455,7 +454,7 @@ footer .container {
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 2px 2px 3px gray;
+    text-shadow: 2px 2px 3px #636363;
   }
   h4 {
     font-size: 1.25rem;
