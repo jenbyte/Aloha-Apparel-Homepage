@@ -32,7 +32,7 @@ a:focus {
   left: 5px;
   top: 5px;
   width: auto;
-  z-index: 100000; /* above all content */
+  z-index: 10; /* above all content */
 }
 .counter {
   display: block;
@@ -71,9 +71,9 @@ a:focus {
   margin: 1rem;
 }
 .main-navigation {
-  text-align: center;
-  order: 3;
   border-top: 1px solid #d7d7d7;
+  order: 3;
+  text-align: center;
   width: 100%;
 }
 .main-navigation ul {
@@ -154,7 +154,8 @@ span {
   font-style: italic;
   font-weight: 100;
 }
-article p {
+article p,
+.container p {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 1.15rem;
@@ -271,11 +272,11 @@ h2 {
   color: #969696;
 }
 .product-type {
-  text-align: center;
   font-family: 'Raleway-med', sans-serif;
   font-size: 0.75rem;
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .price {
   text-align: center;
@@ -347,14 +348,16 @@ h2 {
   text-align: center;
 }
 footer .container {
-  padding: 0 2rem;
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 .footer p {
+  font-family: 'PlayfairDisplay';
+  font-size: 1rem;
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0;
@@ -396,16 +399,13 @@ footer .container {
 
 .sticky {
   background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #d7d7d7;
   position: fixed;
-  top: 0;
-  width: 100%;
   margin: auto;
   height: auto;
-  border-bottom: 1px solid #d7d7d7;
+  top: 0;
+  width: 100%;
   z-index: 10;
-}
-.header {
-  background-color: rgba(255, 255, 255, 0.85);
 }
 
 /*   TABLET   TABLET    TABLET   */
@@ -420,14 +420,10 @@ footer .container {
     align-items: center;
   }
   .aloha-logo {
-    width: auto;
-    height: 50px;
     margin-right: 0;
     order: 1;
   }
   .cart-logo {
-    width: 50px;
-    height: 50px;
     margin-left: 0;
     order: 3;
   }
@@ -437,8 +433,6 @@ footer .container {
     order: 2;
   }
   .main-navigation a {
-    color: #e2574c;
-    text-decoration: none;
     font-size: 0.9rem;
   }
 
@@ -446,15 +440,12 @@ footer .container {
   .banner-bg {
     background-position: top, center 50px;
     margin-top: 82px;
-    width: 100vw;
   }
   .banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-shadow: 2px 2px 3px #636363;
   }
   h4 {
     font-size: 1.25rem;
@@ -463,15 +454,17 @@ footer .container {
     font-size: 3rem;
   }
   /*    - tablet  */
-  article p {
+  article p,
+  .container p {
     max-width: 675px;
-    margin: auto;
+    /* margin: auto; */
   }
   .container {
     padding: 4rem 1rem;
     max-width: 720px;
     margin: auto;
   }
+
   /*  PRODUCTS - tablet   */
   .products a {
     font-size: 2em;
@@ -521,17 +514,16 @@ footer .container {
 
   /*     FOOTER - tablet   */
   footer .container {
-    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
     max-width: 1100px;
   }
   .footer p {
     text-align: left;
-    line-height: 1.5;
     margin: 0;
   }
   .copyright {
@@ -589,7 +581,6 @@ footer .container {
   }
   .main-navigation a {
     font-size: 1rem;
-    /* padding: 1rem; */
     width: 100%;
   }
 
@@ -599,7 +590,6 @@ footer .container {
     background-size: contain, 20%;
     margin-top: 95px;
     height: 34.38rem;
-    width: 100vw;
   }
   .season {
     font-size: 4rem;
@@ -627,10 +617,7 @@ footer .container {
     max-width: 1240px;
   }
   .footer p {
-    text-align: left;
     line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 0;
   }
   .social {
     padding-right: 2.5rem;
@@ -647,19 +634,8 @@ footer .container {
   }
   /* stick-nav */
   .header {
-    margin: 0rem 5rem;
-    background-color: rgba(255, 255, 255, 0.85);
     margin: auto;
     width: 100%;
-  }
-  .sticky {
-    background-color: rgba(255, 255, 255, 0.85);
-    position: fixed;
-    top: 0;
-    margin: auto;
-    height: auto;
-    width: 100%;
-    z-index: 10;
   }
   .counter {
     display: block;
